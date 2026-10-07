@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CloudPass | Passenger Details</title>
+
+    <link rel="stylesheet" href="passenger.css">
+</head>
+
+<body>
+
+    <div class="bg-grid"></div>
+    <div class="glow glow-one"></div>
+    <div class="glow glow-two"></div>
+
+    <!-- MOVING BUS BACKGROUND -->
+    <div class="moving-bus">
+        <div class="bus-body">
+            <div class="bus-window"></div>
+            <div class="bus-window"></div>
+            <div class="bus-window"></div>
+            <div class="bus-light"></div>
+            <div class="bus-wheel wheel-one"></div>
+            <div class="bus-wheel wheel-two"></div>
+        </div>
+    </div>
+
+
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+
+        <div class="logo">
+
+            <div class="logo-icon">
+                ☁
+            </div>
+
+            <div>
+                <strong>
+                    Cloud<span>Pass</span>
+                </strong>
+
+                <small>
+                    SMART MOBILITY
+                </small>
+            </div>
+
+        </div>
+
+        <div class="secure">
+            🔒 SECURE BOOKING
+        </div>
+
+    </header>
+
+
+    <!-- MAIN -->
+
+    <main>
+
+        <section class="page-heading">
+
+            <div class="status">
+                <span></span>
+                PASSENGER VERIFICATION
+            </div>
+
+            <h1>
+                Tell us about
+                <span>your journey.</span>
+            </h1>
+
+            <p>
+                Enter your details to generate your secure digital bus pass.
+            </p>
+
+        </section>
+
+
+        <section class="passenger-area">
+
+
+            <!-- PASSENGER FORM -->
+
+            <div class="form-card">
+
+                <div class="card-header">
+
+                    <div>
+                        <span>STEP 02 / 03</span>
+
+                        <h2>
+                            Passenger Details
+                        </h2>
+                    </div>
+
+                    <div class="step-circle">
+                        02
+                    </div>
+
+                </div>
+
+
+                <form id="passengerForm">
+
+
+                    <!-- NAME -->
+
+                    <div class="form-group">
+
+                        <label>
+                            FULL NAME
+                        </label>
+
+                        <input
+                            type="text"
+                            id="passengerName"
+                            placeholder="Enter your full name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- AGE + GENDER -->
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label>
+                                AGE
+                            </label>
+
+                            <input
+                                type="number"
+                                id="age"
+                                min="1"
+                                max="100"
+                                placeholder="Age"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>
+                                GENDER
+                            </label>
+
+                            <select id="gender" required>
+
+                                <option value="">
+                                    Select gender
+                                </option>
+
+                                <option value="Male">
+                                    Male
+                                </option>
+
+                                <option value="Female">
+                                    Female
+                                </option>
+
+                                <option value="Other">
+                                    Other
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PHONE -->
+
+                    <div class="form-group">
+
+                        <label>
+                            MOBILE NUMBER
+                        </label>
+
+                        <div class="phone-input">
+
+                            <span>
+                                +91
+                            </span>
+
+                            <input
+                                type="tel"
+                                id="phone"
+                                maxlength="10"
+                                placeholder="Enter 10-digit mobile number"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- EMAIL -->
+
+                    <div class="form-group">
+
+                        <label>
+                            EMAIL ADDRESS
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="example@email.com"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- CONFIRM -->
+
+                    <button
+                        type="submit"
+                        class="confirm-btn"
+                    >
+
+                        CONFIRM PASSENGER
+
+                        <span>
+                            →
+                        </span>
+
+                    </button>
+
+
+                    <div class="privacy-note">
+
+                        🔐 Your information is securely processed
+                        by the CloudPass booking system.
+
+                    </div>
+
+                </form>
+
+            </div>
+
+
+
+            <!-- JOURNEY SUMMARY -->
+
+            <aside class="summary-card">
+
+                <div class="summary-tag">
+                    BOOKING SUMMARY
+                </div>
+
+
+                <div class="route">
+
+                    <div>
+
+                        <small>
+                            FROM
+                        </small>
+
+                        <strong>
+                            Chennai
+                        </strong>
+
+                    </div>
+
+
+                    <div class="route-arrow">
+                        →
+                    </div>
+
+
+                    <div>
+
+                        <small>
+                            TO
+                        </small>
+
+                        <strong>
+                            Villupuram
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="divider"></div>
+
+
+                <div class="info-row">
+
+                    <span>
+                        BUS
+                    </span>
+
+                    <strong>
+                        CloudPass Express
+                    </strong>
+
+                </div>
+
+
+                <div class="info-row">
+
+                    <span>
+                        BUS NUMBER
+                    </span>
+
+                    <strong>
+                        BUS 101
+                    </strong>
+
+                </div>
+
+
+                <div class="info-row">
+
+                    <span>
+                        DEPARTURE
+                    </span>
+
+                    <strong>
+                        08:30 AM
+                    </strong>
+
+                </div>
+
+
+                <div class="info-row">
+
+                    <span>
+                        SELECTED SEAT
+                    </span>
+
+                    <strong id="displaySeat">
+                        Seat 01
+                    </strong>
+
+                </div>
+
+
+                <div class="divider"></div>
+
+
+                <div class="total">
+
+                    <span>
+                        TOTAL FARE
+                    </span>
+
+                    <strong>
+                        ₹180
+                    </strong>
+
+                </div>
+
+
+                <div class="security-box">
+
+                    <span class="security-icon">
+                        ✓
+                    </span>
+
+                    <div>
+
+                        <strong>
+                            Secure Booking
+                        </strong>
+
+                        <p>
+                            Your booking will receive
+                            a unique digital pass.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </aside>
+
+        </section>
+
+    </main>
+
+
+    <script src="passenger.js"></script>
+
+</body>
+</html>
