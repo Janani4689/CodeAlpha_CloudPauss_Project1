@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CloudPass | Digital Bus Pass</title>
+
+    <link rel="stylesheet" href="pass.css">
+</head>
+
+<body>
+
+    <div class="bg-grid"></div>
+    <div class="glow glow-one"></div>
+    <div class="glow glow-two"></div>
+
+    <!-- MOVING BUS -->
+
+    <div class="moving-bus">
+
+        <div class="bus-body">
+
+            <div class="bus-window"></div>
+            <div class="bus-window"></div>
+            <div class="bus-window"></div>
+
+            <div class="bus-light"></div>
+
+            <div class="bus-wheel wheel-one"></div>
+            <div class="bus-wheel wheel-two"></div>
+
+        </div>
+
+    </div>
+
+
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+
+        <div class="logo">
+
+            <div class="logo-icon">
+                ☁
+            </div>
+
+            <div>
+
+                <strong>
+                    Cloud<span>Pass</span>
+                </strong>
+
+                <small>
+                    SMART MOBILITY
+                </small>
+
+            </div>
+
+        </div>
+
+
+        <div class="verified">
+
+            <span></span>
+
+            BOOKING VERIFIED
+
+        </div>
+
+    </header>
+
+
+    <!-- MAIN -->
+
+    <main>
+
+
+        <section class="success-heading">
+
+            <div class="success-icon">
+                ✓
+            </div>
+
+
+            <div class="status">
+
+                <span></span>
+
+                BOOKING CONFIRMED
+
+            </div>
+
+
+            <h1>
+
+                Your journey is
+                <span>locked in.</span>
+
+            </h1>
+
+
+            <p>
+
+                Your secure CloudPass digital ticket
+                is ready for travel.
+
+            </p>
+
+        </section>
+
+
+
+        <!-- DIGITAL PASS -->
+
+        <section class="pass-wrapper">
+
+
+            <div class="digital-pass">
+
+
+                <!-- TOP -->
+
+                <div class="pass-top">
+
+                    <div class="pass-brand">
+
+                        <div class="pass-cloud">
+                            ☁
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                CloudPass
+                            </strong>
+
+                            <small>
+                                DIGITAL BUS PASS
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="valid">
+
+                        <span></span>
+
+                        VALID
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="pass-line"></div>
+
+
+
+                <!-- ROUTE -->
+
+                <div class="route-section">
+
+
+                    <div class="location">
+
+                        <small>
+                            FROM
+                        </small>
+
+                        <strong>
+                            Chennai
+                        </strong>
+
+                        <span>
+                            08:30 AM
+                        </span>
+
+                    </div>
+
+
+                    <div class="route-visual">
+
+                        <div class="route-dot"></div>
+
+                        <div class="route-dashed"></div>
+
+                        <div class="route-bus">
+                            🚌
+                        </div>
+
+                        <div class="route-dashed"></div>
+
+                        <div class="route-dot"></div>
+
+                    </div>
+
+
+                    <div class="location destination">
+
+                        <small>
+                            TO
+                        </small>
+
+                        <strong>
+                            Villupuram
+                        </strong>
+
+                        <span>
+                            11:45 AM
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="pass-line"></div>
+
+
+
+                <!-- DETAILS -->
+
+                <div class="details-grid">
+
+
+                    <div>
+
+                        <small>
+                            PASSENGER
+                        </small>
+
+                        <strong id="passengerName">
+                            Passenger
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <small>
+                            BUS
+                        </small>
+
+                        <strong>
+                            BUS 101
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <small>
+                            SEAT
+                        </small>
+
+                        <strong id="seatNumber">
+                            --
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <small>
+                            FARE
+                        </small>
+
+                        <strong>
+                            ₹180
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="pass-line"></div>
+
+
+
+                <!-- QR -->
+
+                <div class="qr-section">
+
+
+                    <div class="qr-box">
+
+                        <div id="qrcode"></div>
+
+                    </div>
+
+
+                    <div class="qr-info">
+
+                        <span>
+                            SCAN TO VERIFY
+                        </span>
+
+                        <h3>
+                            Digital Pass
+                        </h3>
+
+                        <p>
+                            Present this QR code
+                            while boarding the bus.
+                        </p>
+
+                        <div class="booking-id">
+
+                            BOOKING ID
+
+                            <strong id="bookingId">
+                                CP--------
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- ACTIONS -->
+
+            <div class="pass-actions">
+
+                <button
+                    class="download-btn"
+                    onclick="window.print()"
+                >
+
+                    PRINT / SAVE PASS
+
+                    <span>
+                        ↓
+                    </span>
+
+                </button>
+
+
+                <button
+                    class="home-btn"
+                    onclick="goHome()"
+                >
+
+                    BACK TO CLOUDPASS
+
+                    <span>
+                        →
+                    </span>
+
+                </button>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <span>
+            🔐 SECURED BY CLOUDPASS
+        </span>
+
+        <span>
+            SMART MOBILITY • CLOUD TECHNOLOGY
+        </span>
+
+    </footer>
+
+
+    <!-- QR LIBRARY -->
+
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+
+    <script src="pass.js"></script>
+
+</body>
+</html>
