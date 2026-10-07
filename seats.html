@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CloudPass | Select Your Seat</title>
+
+    <link rel="stylesheet" href="seats.css">
+</head>
+
+<body>
+
+    <div class="bg-grid"></div>
+    <div class="glow glow-one"></div>
+    <div class="glow glow-two"></div>
+
+    <!-- Moving Bus -->
+    <div class="moving-bus">
+        <div class="bus-body">
+            <div class="bus-window"></div>
+            <div class="bus-window"></div>
+            <div class="bus-window"></div>
+            <div class="bus-light"></div>
+            <div class="bus-wheel wheel-one"></div>
+            <div class="bus-wheel wheel-two"></div>
+        </div>
+    </div>
+
+
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            <div class="logo-icon">☁</div>
+
+            <div>
+                <strong>Cloud<span>Pass</span></strong>
+                <small>SMART MOBILITY</small>
+            </div>
+        </div>
+
+        <div class="secure">
+            🔒 SECURE BOOKING
+        </div>
+
+    </header>
+
+
+    <!-- MAIN -->
+
+    <main>
+
+        <section class="page-heading">
+
+            <div class="status">
+                <span></span>
+                LIVE SEAT MAP
+            </div>
+
+            <h1>
+                Choose your
+                <span>perfect seat.</span>
+            </h1>
+
+            <p>
+                Select an available seat for your CloudPass journey.
+            </p>
+
+        </section>
+
+
+        <section class="booking-area">
+
+
+            <!-- BUS -->
+
+            <div class="bus-section">
+
+                <div class="bus-top">
+
+                    <div class="bus-title">
+                        <span>CLOUDPASS EXPRESS</span>
+                        <h2>BUS 101</h2>
+                    </div>
+
+                    <div class="live">
+                        <span></span>
+                        LIVE
+                    </div>
+
+                </div>
+
+
+                <div class="bus-body-large">
+
+                    <!-- DRIVER -->
+
+                    <div class="driver-area">
+
+                        <div class="steering">
+                            ◎
+                        </div>
+
+                        <span>DRIVER</span>
+
+                    </div>
+
+
+                    <div class="aisle-label">
+                        AISLE
+                    </div>
+
+
+                    <!-- SEATS -->
+
+                    <div class="seat-grid" id="seatGrid">
+
+                        <!-- JavaScript generates seats -->
+
+                    </div>
+
+
+                    <div class="exit">
+                        EXIT
+                    </div>
+
+                </div>
+
+
+                <!-- LEGEND -->
+
+                <div class="legend">
+
+                    <div>
+                        <span class="legend-seat available"></span>
+                        Available
+                    </div>
+
+                    <div>
+                        <span class="legend-seat selected"></span>
+                        Selected
+                    </div>
+
+                    <div>
+                        <span class="legend-seat booked"></span>
+                        Booked
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- BOOKING SUMMARY -->
+
+            <aside class="summary">
+
+                <div class="summary-tag">
+                    YOUR JOURNEY
+                </div>
+
+                <h2>
+                    Chennai
+                    <span>→</span>
+                    Villupuram
+                </h2>
+
+                <div class="journey-date">
+                    📅 Today • 08:30 AM
+                </div>
+
+
+                <div class="divider"></div>
+
+
+                <div class="summary-row">
+
+                    <span>Bus</span>
+
+                    <strong>
+                        CloudPass Express
+                    </strong>
+
+                </div>
+
+
+                <div class="summary-row">
+
+                    <span>Bus Number</span>
+
+                    <strong>
+                        BUS 101
+                    </strong>
+
+                </div>
+
+
+                <div class="summary-row">
+
+                    <span>Seat</span>
+
+                    <strong id="selectedSeat">
+                        Not selected
+                    </strong>
+
+                </div>
+
+
+                <div class="divider"></div>
+
+
+                <div class="fare">
+
+                    <span>Total Fare</span>
+
+                    <strong id="totalFare">
+                        ₹0
+                    </strong>
+
+                </div>
+
+
+                <button
+                    class="continue-btn"
+                    onclick="continueBooking()"
+                >
+
+                    CONTINUE
+
+                    <span>→</span>
+
+                </button>
+
+
+                <div class="secure-note">
+
+                    🔐 Your booking is protected by
+                    CloudPass secure booking system.
+
+                </div>
+
+            </aside>
+
+        </section>
+
+    </main>
+
+
+    <script src="seats.js"></script>
+
+</body>
+</html>
