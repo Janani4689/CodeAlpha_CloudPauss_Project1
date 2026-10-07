@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CloudPass | Smart Cloud Mobility</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Moving Bus Background -->
+  <div class="moving-bus">
+    <div class="bus-body">
+        <div class="bus-window"></div>
+        <div class="bus-window"></div>
+        <div class="bus-window"></div>
+        <div class="bus-light"></div>
+        <div class="bus-wheel wheel-one"></div>
+        <div class="bus-wheel wheel-two"></div>
+    </div>
+   </div>
+
+    <!-- =========================
+         BACKGROUND
+    ========================== -->
+
+    <div class="bg-grid"></div>
+
+    <div class="glow glow-one"></div>
+    <div class="glow glow-two"></div>
+
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <header class="navbar">
+
+        <div class="logo">
+
+            <div class="logo-icon">
+                ☁
+            </div>
+
+            <div>
+                <strong>
+                    Cloud<span>Pass</span>
+                </strong>
+
+                <small>
+                    SMART MOBILITY
+                </small>
+            </div>
+
+        </div>
+
+
+        <nav>
+
+            <a href="#home">
+                Home
+            </a>
+
+            <a href="#features">
+                Features
+            </a>
+
+            <a href="#technology">
+                Technology
+            </a>
+
+            <button class="login-btn">
+                Login ↗
+            </button>
+
+        </nav>
+
+    </header>
+
+
+
+    <main>
+
+        <!-- =========================
+             HERO SECTION
+        ========================== -->
+
+        <section class="hero" id="home">
+
+
+            <!-- LEFT SIDE -->
+
+            <div class="hero-content">
+
+                <div class="status-badge">
+
+                    <span class="status-dot"></span>
+
+                    CLOUD SYSTEM ONLINE
+
+                </div>
+
+
+                <h1>
+
+                    Move smarter.<br>
+
+                    <span>
+                        Travel beyond.
+                    </span>
+
+                </h1>
+
+
+                <p class="hero-description">
+
+                    A next-generation cloud mobility platform
+                    for intelligent bus booking, real-time
+                    availability and secure digital passes.
+
+                </p>
+
+
+
+                <!-- SEARCH BOX -->
+
+                <div class="search-box">
+
+
+                    <div class="input-group">
+
+                        <label>
+                            FROM
+                        </label>
+
+                        <input
+                            type="text"
+                            id="from"
+                            placeholder="Chennai"
+                        >
+
+                    </div>
+
+
+
+                    <div class="route-line">
+
+                        →
+
+                    </div>
+
+
+
+                    <div class="input-group">
+
+                        <label>
+                            TO
+                        </label>
+
+                        <input
+                            type="text"
+                            id="to"
+                            placeholder="Villupuram"
+                        >
+
+                    </div>
+
+
+
+                    <div class="input-group">
+
+                        <label>
+                            TRAVEL DATE
+                        </label>
+
+                        <input
+                            type="date"
+                            id="date"
+                        >
+
+                    </div>
+
+
+
+                    <button
+                        class="search-btn"
+                        onclick="searchBuses()"
+                    >
+
+                        SEARCH
+
+                        <span>
+                            →
+                        </span>
+
+                    </button>
+
+                </div>
+
+
+
+                <!-- TRUST ITEMS -->
+
+                <div class="trust-row">
+
+                    <span>
+                        ✓ Secure booking
+                    </span>
+
+                    <span>
+                        ✓ Real-time data
+                    </span>
+
+                    <span>
+                        ✓ Cloud powered
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =========================
+                 HERO VISUAL
+            ========================== -->
+
+            <div class="hero-visual">
+
+
+                <div class="orbit orbit-one"></div>
+
+                <div class="orbit orbit-two"></div>
+
+
+                <div class="floating-cloud">
+                    ☁
+                </div>
+
+
+
+                <!-- BUS CARD -->
+
+                <div class="bus-card">
+
+
+                    <div class="card-header">
+
+                        <div>
+
+                            <span class="tiny-label">
+                                LIVE ROUTE
+                            </span>
+
+                            <h3>
+                                BUS 101
+                            </h3>
+
+                        </div>
+
+
+                        <div class="live-status">
+
+                            <span></span>
+
+                            LIVE
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="route-title">
+
+                        <strong>
+                            Chennai
+                        </strong>
+
+                        <span>
+                            →
+                        </span>
+
+                        <strong>
+                            Villupuram
+                        </strong>
+
+                    </div>
+
+
+
+                    <div class="route-line-card">
+
+
+                        <div class="station active">
+
+                            <span></span>
+
+                            <small>
+                                08:30 AM
+                            </small>
+
+                        </div>
+
+
+                        <div class="line"></div>
+
+
+                        <div class="station">
+
+                            <span></span>
+
+                            <small>
+                                11:45 AM
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="seat-section">
+
+
+                        <div>
+
+                            <small>
+                                SEAT AVAILABILITY
+                            </small>
+
+                            <h2>
+
+                                18
+
+                                <span>
+                                    / 40
+                                </span>
+
+                            </h2>
+
+                        </div>
+
+
+
+                        <div class="seat-ring">
+
+                            <span>
+                                45%
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="progress">
+
+                        <div></div>
+
+                    </div>
+
+
+
+                    <button class="view-btn">
+
+                        View live bus
+
+                        <span>
+                            ↗
+                        </span>
+
+                    </button>
+
+                </div>
+
+
+
+                <!-- FLOATING BOOKING CARD -->
+
+                <div class="mini-card">
+
+
+                    <div class="mini-icon">
+                        ✓
+                    </div>
+
+
+                    <div>
+
+                        <strong>
+                            Booking secured
+                        </strong>
+
+                        <small>
+                            Cloud verified
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- NETWORK CARD -->
+
+                <div class="data-card">
+
+                    <span class="pulse"></span>
+
+                    <div>
+
+                        <small>
+                            NETWORK
+                        </small>
+
+                        <strong>
+                            99.9% ONLINE
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             STATS
+        ========================== -->
+
+        <section class="stats">
+
+
+            <div class="stat-card">
+
+                <span class="stat-icon">
+                    🚌
+                </span>
+
+                <div>
+
+                    <h2>
+                        42+
+                    </h2>
+
+                    <p>
+                        Active Buses
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="stat-card">
+
+                <span class="stat-icon">
+                    ◉
+                </span>
+
+                <div>
+
+                    <h2>
+                        1,284
+                    </h2>
+
+                    <p>
+                        Available Seats
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="stat-card">
+
+                <span class="stat-icon">
+                    ↗
+                </span>
+
+                <div>
+
+                    <h2>
+                        2,438
+                    </h2>
+
+                    <p>
+                        Today's Bookings
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="stat-card">
+
+                <span class="stat-icon">
+                    ◈
+                </span>
+
+                <div>
+
+                    <h2>
+                        1,872
+                    </h2>
+
+                    <p>
+                        Active Passes
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =========================
+             BUS RESULTS
+        ========================== -->
+
+        <section
+            class="bus-results"
+            id="busResults"
+        >
+
+
+            <div class="results-header">
+
+
+                <div>
+
+                    <span class="section-tag">
+                        LIVE BUS NETWORK
+                    </span>
+
+
+                    <h2>
+                        Available
+                        <span>
+                            Buses
+                        </span>
+                    </h2>
+
+
+                    <p id="routeText">
+
+                        Choose your route to view
+                        available buses.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="live-indicator">
+
+                    <span></span>
+
+                    LIVE DATA
+
+                </div>
+
+            </div>
+
+
+
+            <div
+                class="bus-list"
+                id="busList"
+            >
+
+                <!-- JavaScript will add buses here -->
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =========================
+             FEATURES
+        ========================== -->
+
+        <section
+            class="features"
+            id="features"
+        >
+
+
+            <div class="section-heading">
+
+
+                <div class="section-tag">
+
+                    PLATFORM / FEATURES
+
+                </div>
+
+
+
+                <h2>
+
+                    Built for the future
+
+                    <br>
+
+                    <span>
+                        of mobility.
+                    </span>
+
+                </h2>
+
+
+
+                <p>
+
+                    CloudPass connects passengers,
+                    buses and cloud infrastructure
+                    into one intelligent system.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="feature-grid">
+
+
+                <!-- FEATURE 1 -->
+
+                <div class="feature-card large-card">
+
+
+                    <div class="feature-number">
+                        01
+                    </div>
+
+
+                    <div class="feature-icon">
+                        ⌁
+                    </div>
+
+
+                    <h3>
+                        Live Availability
+                    </h3>
+
+
+                    <p>
+
+                        Monitor real-time seat
+                        availability and bus occupancy
+                        before you book.
+
+                    </p>
+
+
+                    <div class="feature-line"></div>
+
+
+                    <span class="feature-link">
+                        REAL-TIME SYSTEM →
+                    </span>
+
+                </div>
+
+
+
+                <!-- FEATURE 2 -->
+
+                <div class="feature-card">
+
+
+                    <div class="feature-number">
+                        02
+                    </div>
+
+
+                    <div class="feature-icon">
+                        ▣
+                    </div>
+
+
+                    <h3>
+                        Digital Pass
+                    </h3>
+
+
+                    <p>
+
+                        Every booking generates
+                        a secure digital pass
+                        with QR verification.
+
+                    </p>
+
+
+                    <div class="feature-line"></div>
+
+
+                    <span class="feature-link">
+                        QR VERIFIED →
+                    </span>
+
+                </div>
+
+
+
+                <!-- FEATURE 3 -->
+
+                <div class="feature-card">
+
+
+                    <div class="feature-number">
+                        03
+                    </div>
+
+
+                    <div class="feature-icon">
+                        ⌘
+                    </div>
+
+
+                    <h3>
+                        Cloud Security
+                    </h3>
+
+
+                    <p>
+
+                        Secure booking logic prevents
+                        duplicate reservations and
+                        invalid pricing.
+
+                    </p>
+
+
+                    <div class="feature-line"></div>
+
+
+                    <span class="feature-link">
+                        CLOUD SECURED →
+                    </span>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             TECHNOLOGY
+        ========================== -->
+
+        <section
+            class="technology"
+            id="technology"
+        >
+
+
+            <div class="tech-content">
+
+
+                <div class="section-tag">
+
+                    SYSTEM ARCHITECTURE
+
+                </div>
+
+
+
+                <h2>
+
+                    Powered by a
+
+                    <br>
+
+                    <span>
+                        modern cloud stack.
+                    </span>
+
+                </h2>
+
+
+
+                <p>
+
+                    Designed with scalable backend
+                    services, cloud database integration
+                    and secure APIs.
+
+                </p>
+
+
+
+                <div class="tech-stack">
+
+
+                    <span>
+                        NODE.JS
+                    </span>
+
+
+                    <span>
+                        EXPRESS
+                    </span>
+
+
+                    <span>
+                        MONGODB
+                    </span>
+
+
+                    <span>
+                        REST API
+                    </span>
+
+
+                    <span>
+                        QR SECURITY
+                    </span>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ARCHITECTURE VISUAL -->
+
+            <div class="architecture">
+
+
+                <div class="arch-node">
+
+                    <span>
+                        01
+                    </span>
+
+                    <strong>
+                        USER
+                    </strong>
+
+                </div>
+
+
+                <div class="arch-line"></div>
+
+
+                <div class="arch-node active-node">
+
+                    <span>
+                        02
+                    </span>
+
+                    <strong>
+                        API
+                    </strong>
+
+                </div>
+
+
+                <div class="arch-line"></div>
+
+
+                <div class="arch-node">
+
+                    <span>
+                        03
+                    </span>
+
+                    <strong>
+                        CLOUD DB
+                    </strong>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+
+        <div class="logo">
+
+
+            <div class="logo-icon">
+                ☁
+            </div>
+
+
+            <div>
+
+                <strong>
+                    Cloud<span>Pass</span>
+                </strong>
+
+                <small>
+                    SMART MOBILITY
+                </small>
+
+            </div>
+
+        </div>
+
+
+
+        <p>
+
+            Smart mobility powered by
+            cloud technology.
+
+        </p>
+
+
+
+        <span class="footer-status">
+
+            ● SYSTEM ONLINE
+
+        </span>
+
+
+    </footer>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+</html>
