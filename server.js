@@ -1,6 +1,6 @@
 require("dotenv").config();
 const mongoose=require("mongoose");
-const Booking=require("./models/booking");
+const Booking=require("./booking");
 const express = require("express");
 const path = require("path");
 
